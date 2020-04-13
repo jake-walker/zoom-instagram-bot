@@ -1,0 +1,15 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+
+[packages]
+instagram-private-api = {git = "https://git@github.com/ping/instagram_private_api.git"}
+discord-webhook = "*"
+logzero = "*"
+
+[requires]
+python_version = "3.7"

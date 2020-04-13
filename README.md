@@ -2,6 +2,8 @@
 
 A small program to check an Instagram chat for Zoom links and send them to Discord via a webhook.
 
+> *This was designed to get working quickly so it isn't the nicest code in the world! It works well enough for the time being and I might end up putting more time into making it better in the future.*
+
 ## Usage
 
 Firstly, install the programs dependencies using [Pipenv](https://pipenv-fork.readthedocs.io/en/latest/)
@@ -39,3 +41,16 @@ python bot.py
 [I 200413 13:13:47 bot:53] Logged in as test
 [D 200413 13:13:47 bot:61] Getting messages!
 ```
+
+## Known Issues
+
+- Links are sent multiple times to Discord.
+- All `vh7.uk` URLs are also sent even if they are not Zoom links.
+
+## New Feature List
+
+This is a small list of cool features that would be cool to build into this program in the future.
+
+- Shorten links before they are sent to Discord.
+- Shorten links and send them back to Instagram.
+- Detect shortened links sent on Instagram.
