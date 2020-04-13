@@ -1,0 +1,19 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: release-docker
+    image: plugins/docker
+    settings:
+      username: jakew-bot
+      password:
+        from_secret: github_token
+      repo: docker.pkg.github.com/jake-walker/zoom-instagram-bot/zoom-instagram-bot
+      registry: docker.pkg.github.com
+    when:
+      branch:
+        - master
+      event:
+        - push
